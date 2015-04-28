@@ -20,7 +20,7 @@ module.exports = (robot) ->
      res.reply "Hello there."
 
    robot.hear /hello/i, (res) ->
-     res.reply "Are you welcoming me . A BOT."
+     res.reply "Are you welcoming me? . I am just a BOT. You are awesome."
 
    robot.respond /who is your owner/i, (res) ->
      res.send "Anchit Jain is my owner."
