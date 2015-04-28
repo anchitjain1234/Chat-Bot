@@ -6,5 +6,5 @@ deployed on Heroku to get you up and running as quick as possible.
 
 If you want to see it in action please join <a href="https://bitspilani8.campfirenow.com/ff6d5">https://bitspilani8.campfirenow.com/ff6d5</a>.
 <br> Type <b>mybot help</b> to see a list of available commands .
-<br> Now included <a href="http://www.pandorabots.com/" target=" >Pandorabot</a> with mybot.
+<br> Now included <a href="http://www.pandorabots.com/">Pandorabot</a> with mybot.
 <br> To try with improved bot try <b> mybot pb query </b>.
