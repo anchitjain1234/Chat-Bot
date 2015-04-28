@@ -116,3 +116,6 @@ module.exports = (robot) ->
    robot.respond /sleep it off/i, (res) ->
      robot.brain.set 'totalSodas', 0
      res.reply 'zzzzz'
+
+   robot.catchAll (msg) ->
+     msg.send "I don't know how to react to: #{msg.message.text} . Please try 'mybot pb <query>' for more generic answer. Thank You."
