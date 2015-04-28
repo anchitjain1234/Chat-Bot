@@ -21,6 +21,12 @@ module.exports = (robot) ->
 
    robot.respond /who is your owner/i, (res) ->
      res.send "Anchit Jain is my owner."
+
+   robot.respond /who created you/i, (res) ->
+     res.send "Anchit Jain created me."
+
+   robot.respond /who is your master/i, (res) ->
+     res.send "Anchit Jain is my master."
   #
   #
    robot.topic (res) ->
