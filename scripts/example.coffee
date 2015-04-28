@@ -87,8 +87,8 @@ module.exports = (robot) ->
   #
   #
    robot.router.post '/hubot/chatsecrets/:room', (req, res) ->
-     room   = req.params.room
-     data   = JSON.parse req.body.payload
+     room = req.params.room
+     data = JSON.parse req.body.payload
      secret = data.secret
   #
      robot.messageRoom room, "I have a secret: #{secret}"
@@ -111,7 +111,7 @@ module.exports = (robot) ->
      else
        res.reply 'Sure!'
   #
-       robot.brain.set 'totalSodas', sodasHad+1
+       robot.brain.set 'totalSodas', sodasHad + 1
   #
    robot.respond /sleep it off/i, (res) ->
      robot.brain.set 'totalSodas', 0
