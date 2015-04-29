@@ -74,7 +74,7 @@ module.exports = (robot) ->
     obj = {
       from: "MYBOT <anchitjain1234@yandex.com>",
       to: mailto,
-      subject: subject or " "
+      subject: subject or "From MyBOT @ https://bitspilani8.campfirenow.com/ff6d5 "
       text: message or ""
     }
 
