@@ -12,6 +12,7 @@
     "hubot-google-translate": "^0.1.0",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "0.0.4",
+    "hubot-horsify": "*",
     "hubot-maps": "0.0.2",
     "hubot-pugme": "^0.1.0",
     "hubot-redis-brain": "0.0.2",
@@ -20,10 +21,10 @@
     "hubot-shipit": "^0.2.0",
     "hubot-thank-you": "0.0.3",
     "hubot-thesimpsons": ">= 0.0.0",
+    "hubot-weather": "*",
     "hubot-youtube": "^0.1.2",
-    "pb-hubot": "0.0.3",
-    "hubot-weather":"*",
-    "hubot-horsify":"*"
+    "nodemailer": "^0.7.1",
+    "pb-hubot": "0.0.3"
   },
   "engines": {
     "node": "0.10.x"
