@@ -72,7 +72,7 @@ module.exports = (robot) ->
 
     # Create an object to inform our mailing procedure
     obj = {
-      from: "MYBOT <anchitjain1234@yandex.com>",
+      from: "MYBOT <anchitjain1234@gmail.com>",
       to: mailto,
       subject: subject or "From MyBOT @ https://bitspilani8.campfirenow.com/ff6d5 "
       text: message or ""
