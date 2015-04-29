@@ -22,10 +22,10 @@ smtpTransport = null
 # Create reusable transport method (opens pool of SMTP connections)
 createTransport = ->
   smtpTransport = nodemailer.createTransport "SMTP", {
-      service: "Gmail",
+      service: "Mandrill",
       auth: {
-          user: "anchitjain1234@gmail.com",
-          pass: '"HELLOworld!"'
+          user: "anchitjain1234@yandex.com",
+          pass: 'eQleUFaeFGkbcV9gxY87oQ'
       }
   }
 
