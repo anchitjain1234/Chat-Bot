@@ -22,7 +22,8 @@
     "hubot-thesimpsons": ">= 0.0.0",
     "hubot-youtube": "^0.1.2",
     "pb-hubot": "0.0.3",
-    "hubot-weather":"*"
+    "hubot-weather":"*",
+    "hubot-horsify":"*"
   },
   "engines": {
     "node": "0.10.x"
