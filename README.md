@@ -10,9 +10,9 @@ If you want to see it in action please join <a href="https://bitspilani8.campfir
 <br> To try with improved bot try <b> mybot pb query </b>.
 <br><br>
 Some commands:-<br>
-1. mybot 9gag - See a random 9gag meme.
-2. mybot animate me <query> :- Seraches a GIF for the given query.
-3. mybot map me <location> :- Searches Google Maps for the given location.
-4. mybot horsify me <query> :- Adds horse to the face of the image searched from the given query.
-5. mybot annoy me :- To start getting annoyed from mybot.
-6. mybot unannoy me :- To stop bot from annoying.
+1. <b>mybot 9gag</b> - See a random 9gag meme.<br>
+2. <b>mybot animate me <query></b> :- Seraches a GIF for the given query.<br>
+3. <b>mybot map me <location></b> :- Searches Google Maps for the given location.<br>
+4. <b>mybot horsify me <query></b> :- Adds horse to the face of the image searched from the given query.<br>
+5. <b>mybot annoy me</b> :- To start getting annoyed from mybot.<br>
+6. <b>mybot unannoy me</b> :- To stop bot from annoying.<br>
