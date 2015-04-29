@@ -102,4 +102,4 @@ module.exports = (robot) ->
      res.reply 'zzzzz'
 
    robot.catchAll (msg) ->
-     msg.send "I don't know how to react to: #{msg.message.text} . Please try 'mybot pb <query>' for more generic answer. Thank You."
+     msg.send "I don't know how to react to: #{msg.message.text} . Please try 'mybot help' to see list of available commands or 'mybot pb <query>' for more generic answer. Thank You."

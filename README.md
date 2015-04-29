@@ -8,3 +8,11 @@ If you want to see it in action please join <a href="https://bitspilani8.campfir
 <br> Type <b>mybot help</b> to see a list of available commands .
 <br> Now included <a href="http://www.pandorabots.com/">Pandorabot</a> with mybot.
 <br> To try with improved bot try <b> mybot pb query </b>.
+<br><br>
+Some commands:-<br>
+1. mybot 9gag - See a random 9gag meme.
+2. mybot animate me <query> :- Seraches a GIF for the given query.
+3. mybot map me <location> :- Searches Google Maps for the given location.
+4. mybot horsify me <query> :- Adds horse to the face of the image searched from the given query.
+5. mybot annoy me :- To start getting annoyed from mybot.
+6. mybot unannoy me :- To stop bot from annoying.
