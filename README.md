@@ -22,4 +22,6 @@ Some commands:-<br>
 7.  <b>mybot simpsons image me</b> :- Get a random Simpsons meme.<br>
 8.  <b>mybot simpsons quote me</b> :- Get a random Simpsons quote.<br>
 9.  <b>mybot weather in "location"</b> :- Get weather forecast for the specified location.<br>
-10. <b>mybot qr me "url"</b> :- Get QR code for the specified URL.<br>	
+10. <b>mybot qr me "url"</b> :- Get QR code for the specified URL.<br>
+11. <b>mybot email <address@example.com> -s "subject" -m "message" </b> :- To send email using mybot.<br>
+12. <b>mybot what is query</b> :- To know about query.<br>
