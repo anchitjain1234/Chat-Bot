@@ -19,6 +19,9 @@ module.exports = (robot) ->
    robot.hear /hello/i, (res) ->
      res.reply "Are you welcoming me? . I am just a BOT. You are awesome."
 
+   robot.hear /yo/i, (res) ->
+     res.reply "Yo."
+
    robot.respond /who is your owner/i, (res) ->
      res.send "Anchit Jain is my owner."
 
@@ -41,7 +44,6 @@ module.exports = (robot) ->
    robot.leave (res) ->
      res.send res.random leaveReplies
   #
-   answer = process.env.HUBOT_ANSWER_TO_THE_ULTIMATE_QUESTION_OF_LIFE_THE_UNIVERSE_AND_EVERYTHING
   #
   #
    robot.respond /you are a little slow/, (res) ->
@@ -49,25 +51,6 @@ module.exports = (robot) ->
        res.send "Who you calling 'slow'?"
      , 60 * 1000
   #
-   annoyIntervalId = null
-  #
-   robot.respond /annoy me/, (res) ->
-     if annoyIntervalId
-       res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
-       return
-  #
-     res.send "Hey, want to hear the most annoying sound in the world?"
-     annoyIntervalId = setInterval () ->
-       res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
-     , 1000
-  #
-   robot.respond /unannoy me/, (res) ->
-     if annoyIntervalId
-       res.send "GUYS, GUYS, GUYS!"
-       clearInterval(annoyIntervalId)
-       annoyIntervalId = null
-     else
-       res.send "Not annoying you right now, am I?"
   #
   #
    robot.router.post '/hubot/chatsecrets/:room', (req, res) ->
@@ -85,21 +68,6 @@ module.exports = (robot) ->
      if res?
        res.reply "DOES NOT COMPUTE"
   #
-   robot.respond /have a soda/i, (res) ->
-     # Get number of sodas had (coerced to a number).
-     sodasHad = robot.brain.get('totalSodas') * 1 or 0
-  #
-     if sodasHad > 4
-       res.reply "I'm too fizzy.."
-  #
-     else
-       res.reply 'Sure!'
-  #
-       robot.brain.set 'totalSodas', sodasHad + 1
-  #
-   robot.respond /sleep it off/i, (res) ->
-     robot.brain.set 'totalSodas', 0
-     res.reply 'zzzzz'
 
    robot.catchAll (msg) ->
      msg.send "I don't know how to react to: #{msg.message.text} . Please try 'mybot help' to see list of available commands or 'mybot pb <query>' for more generic answer. Thank You."
