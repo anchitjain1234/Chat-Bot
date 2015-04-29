@@ -15,5 +15,6 @@
   "pb-hubot",
   "hubot-9gag",
   "hubot-horsify",
-  "hubot-weather"
+  "hubot-weather",
+  "hubot-qr"
 ]
