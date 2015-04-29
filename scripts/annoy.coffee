@@ -9,6 +9,7 @@
 #
 # Commands:
 #   hubot annoy me - The bot starts annoying you.
+#   hubot unannoy me - The bot stops annoying you.
 #
 # Author:
 #   Anchit Jain.
@@ -26,3 +27,12 @@ module.exports = (robot) ->
     annoyIntervalId = setInterval () ->
       res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
     , 1000
+
+
+    robot.respond /unannoy me/, (res) ->
+      if annoyIntervalId
+        res.send "GUYS, GUYS, GUYS!"
+        clearInterval(annoyIntervalId)
+        annoyIntervalId = null
+      else
+        res.send "Not annoying you right now, am I?"
