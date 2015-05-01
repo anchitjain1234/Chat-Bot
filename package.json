@@ -27,7 +27,8 @@
     "nodemailer": "^0.7.1",
     "pb-hubot": "0.0.3",
     "hubot-codinglove": "0.2.5",
-    "hubot-victory": ">= 0.0.0"
+    "hubot-victory": ">= 0.0.0",
+    "wolfram": "^0.3.1"
   },
   "engines": {
     "node": "0.10.x"
