@@ -7,6 +7,7 @@
   "dependencies": {
     "hubot": "^2.12.0",
     "hubot-9gag": "^0.2.0",
+    "hubot-codinglove": "0.2.5",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.4",
     "hubot-google-translate": "^0.1.0",
@@ -22,12 +23,12 @@
     "hubot-shipit": "^0.2.0",
     "hubot-thank-you": "0.0.3",
     "hubot-thesimpsons": ">= 0.0.0",
+    "hubot-victory": ">= 0.0.0",
     "hubot-weather": "*",
     "hubot-youtube": "^0.1.2",
     "nodemailer": "^0.7.1",
     "pb-hubot": "0.0.3",
-    "hubot-codinglove": "0.2.5",
-    "hubot-victory": ">= 0.0.0"
+    "wolfram": "^0.3.1"
   },
   "engines": {
     "node": "0.10.x"
