@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- 0.10.38
+deploy:
+  provider: heroku
+  api_key:
+    secure: HnNNiC1DscBGmrDH4bBAqWrajVcVX2KhcLCzyOmfjsur5GAKs8kdI8vxeYdPFCwdDD95e5KGIjbHQR8JAPkOYWqAIfQroQJSzNichElXUd+4rpt/8Pup4paIGdmf//kVHyKSFV/oZOV0av9rlu1rchqul2ZZd0tGPaSduPa5u3k=
+  app:
+    master: "aqueous-headland-5376"
+    forslack: "mybot-slack"
