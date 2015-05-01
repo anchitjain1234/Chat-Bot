@@ -27,3 +27,4 @@ Some commands:-<br>
 10. <b>mybot qr me "url"</b> :- Get QR code for the specified URL.<br>
 11. <b>mybot email <address@example.com> -s "subject" -m "message" </b> :- To send email using mybot.<br>
 12. <b>mybot what is query</b> :- To know about query.<br>
+13. <b>mybot question "question"</b> :- To get answer from wolfram alpha for your question. <br>
