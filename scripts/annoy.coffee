@@ -12,7 +12,7 @@
 #   hubot unannoy me - The bot stops annoying you.
 #
 # Author:
-#   Anchit Jain.
+#   anchitjain1234
 
 module.exports = (robot) ->
 
