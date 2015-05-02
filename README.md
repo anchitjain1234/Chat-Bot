@@ -1,10 +1,10 @@
 # mybot
-													    __  _____  ______  ____  ______
-													   /  |/  /\ \/ / __ )/ __ \/_  __/
-													  / /|_/ /  \  / __  / / / / / /   
-													 / /  / /   / / /_/ / /_/ / / /    
-													/_/  /_/   /_/_____/\____/ /_/     
-													                                   
+						    __  _____  ______  ____  ______
+						   /  |/  /\ \/ / __ )/ __ \/_  __/
+						  / /|_/ /  \  / __  / / / / / /   
+						 / /  / /   / / /_/ / /_/ / / /    
+						/_/  /_/   /_/_____/\____/ /_/     
+						                                   
 [![Build Status](https://travis-ci.org/anchitjain1234/mybot.svg?branch=forslack)](https://travis-ci.org/anchitjain1234/mybot)<br>
 [![Hubot](https://hubot.github.com/images/layout/hubot-avatar@2x.png)](https://hubot.github.com)
 <br>
