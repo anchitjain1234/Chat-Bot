@@ -1,4 +1,6 @@
 # mybot
+
+[![Join the chat at https://gitter.im/anchitjain1234/mybot](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/anchitjain1234/mybot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/anchitjain1234/mybot.svg?branch=master)](https://travis-ci.org/anchitjain1234/mybot)
 <br>
 [![Hubot](https://hubot.github.com/images/layout/hubot-avatar@2x.png)](https://hubot.github.com)
