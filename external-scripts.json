@@ -19,5 +19,6 @@
   "hubot-qr",
   "hubot-google-translate",
   "hubot-codinglove",
-  "hubot-victory"
+  "hubot-victory",
+  "hubot-self-uptime"
 ]
