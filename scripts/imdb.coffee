@@ -21,21 +21,23 @@ module.exports = (robot) ->
     msg.http(apiurl).get() (err, res, body) ->
       try
         json = JSON.parse(body)
-        msg.send "\n    Title: #{json[0].title},  IMDB URL: #{json[0].urlIMDB}\n    Directors: "
+        response= "\n    Title: #{json[0].title},  IMDB URL: #{json[0].urlIMDB}\n    Directors: \n"
         len = json[0].directors.length
         i = 0
         while (i < len)
-          msg.send "       #{json[0].directors[i].name}"
+          response += "       #{json[0].directors[i].name} \n"
           i += 1
-        msg.send "    Actors:"
+        response += "    Actors:\n"
         len = json[0].actors.length
         i = 0
         while (i < len)
-          msg.send "       #{json[0].actors[i].actorName}"
+          response += "       #{json[0].actors[i].actorName}\n"
           i += 1
-        msg.send "    Plot: #{json[0].plot}\n    Releasedate: #{json[0].releaseDate}\n    Rating: #{json[0].rating}"
+        response += "    Plot: #{json[0].plot}\n    Releasedate: #{json[0].releaseDate}\n    Rating: #{json[0].rating}\n"
         mscore=json[0].metascore
         if mscore
-          msg.send "    Metascore:#{mscore}\n"
+          response += "    Metascore:#{mscore}\n"
+
+        msg.send "#{response}"
       catch error
         msg.send "Movie not found."
