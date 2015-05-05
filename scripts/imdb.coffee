@@ -16,7 +16,8 @@ util = require "util"
 module.exports = (robot) ->
   robot.respond /imdb (.*)/i, (msg) ->
     moviename = escape(msg.match[1])
-    apiurl = "http://www.myapifilms.com/imdb?title=#{moviename}&format=JSON&aka=0&business=0&seasons=0&seasonYear=0&technical=0&filter=N&exactFilter=0&limit=1&forceYear=0&lang=en-us&actors=S&biography=0&trailer=0&uniqueName=0&filmography=0&bornDied=0&starSign=0&actorActress=0&actorTrivia=0&movieTrivia=0&awards=0&moviePhotos=N&movieVideos=N&token=c618d1ac-0398-4605-8061-49b1b49b95a4&similarMovies=0"
+    apikey=process.env.MYAPIFILMS_TOKEN
+    apiurl = "http://www.myapifilms.com/imdb?title=#{moviename}&format=JSON&aka=0&business=0&seasons=0&seasonYear=0&technical=0&filter=N&exactFilter=0&limit=1&forceYear=0&lang=en-us&actors=S&biography=0&trailer=0&uniqueName=0&filmography=0&bornDied=0&starSign=0&actorActress=0&actorTrivia=0&movieTrivia=0&awards=0&moviePhotos=N&movieVideos=N&token=#{apikey}&similarMovies=0"
     msg.http(apiurl).get() (err, res, body) ->
       try
         json = JSON.parse(body)
