@@ -38,7 +38,7 @@ module.exports = (robot) ->
           response += "       #{json[0].actors[i].actorName}\n"
           i += 1
         response += "     Plot: #{json[0].plot}\n"
-        
+        response += "     Poster Image: #{json[0].urlPoster}\n"
 
         msg.send "#{response}"
       catch error
