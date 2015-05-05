@@ -14,18 +14,18 @@
 # Anchit Jain
 util = require "util"
 module.exports = (robot) ->
-  robot.respond/imdb (.*)/i, (msg) ->
+  robot.respond /imdb (.*)/i, (msg) ->
     moviename = escape(msg.match[1])
-    apikey = process.env.MYAPIFILMS_TOKEN
+    apikey=process.env.MYAPIFILMS_TOKEN
     apiurl = "http://www.myapifilms.com/imdb?title=#{moviename}&format=JSON&aka=0&business=0&seasons=0&seasonYear=0&technical=0&filter=N&exactFilter=0&limit=1&forceYear=0&lang=en-us&actors=S&biography=0&trailer=0&uniqueName=0&filmography=0&bornDied=0&starSign=0&actorActress=0&actorTrivia=0&movieTrivia=0&awards=0&moviePhotos=N&movieVideos=N&token=#{apikey}&similarMovies=0"
-    msg.http(apiurl).get()(err, res, body) ->
+    msg.http(apiurl).get() (err, res, body) ->
       try
         json = JSON.parse(body)
-        response = "\n     Title: #{json[0].title},  IMDB URL: #{json[0].urlIMDB}\n    IMDBRating: #{json[0].rating}\n    ReleaseYear: #{json[0].year}  ,  Length: #{json[0].runtime[0]}  ,  Rating: #{json[0].rated}\n"
-        mscore = json[0].metascore
+        response= "\n     Title: #{json[0].title},  IMDB URL: #{json[0].urlIMDB}\n    IMDBRating: #{json[0].rating}\n    ReleaseYear: #{json[0].year}  ,  Length: #{json[0].runtime[0]}  ,  Rating: #{json[0].rated}\n"
+        mscore=json[0].metascore
         if mscore
           response += "    Metascore:#{mscore}\n"
-        response += "    Director(s): \n"
+        response+="    Director(s): \n"
         len = json[0].directors.length
         i = 0
         while (i < len)
@@ -39,6 +39,7 @@ module.exports = (robot) ->
           i += 1
         response += "     Plot: #{json[0].plot}\n"
         response += "     Poster Image: #{json[0].urlPoster}\n"
+
         msg.send "#{response}"
-      catcherror
+      catch error
         msg.send "Movie not found."
