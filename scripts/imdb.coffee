@@ -21,7 +21,7 @@ module.exports = (robot) ->
     msg.http(apiurl).get() (err, res, body) ->
       try
         json = JSON.parse(body)
-        response= "\n    Title: #{json[0].title},  IMDB URL: #{json[0].urlIMDB}\n    IMDBRating: #{json[0].rating}\n    ReleaseYear: #{json[0].year}  ,  Length: #{json[0].runtime[0]}  ,  Rating: #{json[0].rated}\n"
+        response= "\n     Title: #{json[0].title},  IMDB URL: #{json[0].urlIMDB}\n    IMDBRating: #{json[0].rating}\n    ReleaseYear: #{json[0].year}  ,  Length: #{json[0].runtime[0]}  ,  Rating: #{json[0].rated}\n"
         mscore=json[0].metascore
         if mscore
           response += "    Metascore:#{mscore}\n"
