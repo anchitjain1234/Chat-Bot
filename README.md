@@ -30,3 +30,4 @@ Some commands:-<br>
 12. <b>mybot what is query</b> :- To know about query.<br>
 13. <b>mybot question "question"</b> :- To get answer from wolfram alpha for your question. <br>
 14. <b>mybot tvshow "show"</b>:- To get info about entered tv show.<br>
+15. <b>mybot imdb moviename</b>:- To fetch the various bits of information from IMDB.<br>
