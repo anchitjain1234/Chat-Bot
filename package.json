@@ -5,6 +5,7 @@
   "author": "Anchit Jain <anchitjain1234@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
+    "cheerio": "^0.19.0",
     "hubot": "^2.12.0",
     "hubot-9gag": "^0.2.0",
     "hubot-codinglove": "0.2.5",
