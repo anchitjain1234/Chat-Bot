@@ -31,3 +31,4 @@ Some commands:-<br>
 13. <b>mybot question "question"</b> :- To get answer from wolfram alpha for your question. <br>
 14. <b>mybot tvshow "show"</b>:- To get info about entered tv show.<br>
 15. <b>mybot imdb moviename</b>:- To fetch the various bits of information from IMDB.<br>
+16. <b>mybot c&h</b>:-Get a random comic strip from Cyanide and Happiness.<br>
