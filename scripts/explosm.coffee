@@ -13,7 +13,7 @@
 # hubot c&h - Returns random comic strip from Cyanide and Happiness.
 #
 # Author:
-# Anchit Jain
+# https://github.com/anchitjain1234
 
 
 cheerio     = require('cheerio')
