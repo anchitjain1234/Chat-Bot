@@ -5,13 +5,13 @@
 # "util":"*"
 #
 # Configuration:
-# None
+# MYAPIFILMS_TOKEN : Environment Variable cotaining api token from myapifilms.
 #
 # Commands:
 # hubot imdb moviename - Returns information of entered movie from indb.
 #
 # Author:
-# Anchit Jain
+# https://github.com/anchitjain1234
 util = require "util"
 module.exports = (robot) ->
   robot.respond /imdb (.*)/i, (msg) ->
