@@ -7,11 +7,24 @@
 #   Uncomment the ones you want to try and experiment with.
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
+anticursingresponse = [
+      "Profanity is the weapon of the witless",
+      "Profanity is the common crutch of the conversational cripple",
+      "When a man uses profanity to support an argument, it indicates that either the man or the argument is weak - probably both",
+      "Profanity is the attempt of a lazy and feeble mind to express itself forcefully",
+      "A vessel is known by the sound, whether it be cracked or not, so men are proved by their speeches whether they be wise or not.",
+      "Such as thy words are, such will thine affections be esteemed; and such as thine affections, will be thy deeds; and such as thy deeds will be thy life.",
+      "A superior man is modest in his speech, but exceeds in his actions.",
+      "Swearing is usually a good indicator of an inadequate vocabulary with which one is unable to adequately express their true feelings in an appropriate manner.",
+      "A person's speech is a mirror that reflects the true interior character of the individual."
+    ]
 
 module.exports = (robot) ->
 
+    
+
    robot.hear /fuck/i, (res) ->
-     res.send "Please dont abuse you MOTHERFUCKING FUCK. Only I have the right to abuse."
+     res.send res.random anticursingresponse
 
    robot.respond /hello/i, (res) ->
      res.reply "Hello there."
@@ -68,6 +81,3 @@ module.exports = (robot) ->
      if res?
        res.reply "DOES NOT COMPUTE"
   #
-
-   robot.catchAll (msg) ->
-     msg.send "I don't know how to react to: #{msg.message.text} . Please try 'mybot help' to see list of available commands or 'mybot pb <query>' for more generic answer. Thank You."
